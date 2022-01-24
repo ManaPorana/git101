@@ -1,0 +1,50 @@
+#include <stdio.h>
+// variable
+// int j, l;
+
+// function header
+// ReturnType fuctionName(parameter) {.......  return  ......}
+//int addTen(int x)
+//{
+//    x += 10;
+//    return x;
+//}
+// Function Pototype
+int x = 10;
+int addTen(int x)
+    {
+        printf("addTen x : %d\n", x);
+        x += 10;
+        printf("after added addTen x : %d\n", x);
+        return x;
+    }
+int addTwenty()
+    {
+        printf("addTwenty x = %d\n", x);
+        x += 20;
+        printf("after added addTwenty x = %d\n", x);
+        return x;
+    }    
+int addThirty(int x)
+{
+    printf("addThirty x = %d\n", x);
+    x = 200;
+    x += 30;
+    printf("after addd addThirty x = %d\n", x);
+    return x;
+}
+int main()
+{
+    //for (int i = 0; i < 10 ; i += 1)
+    //{
+    //    printf("%d\n", i);
+    //}
+    int x = 100;
+    int y = addTen(x);
+
+    printf("In main x = %d, y = %d\n", x, y); 
+    int z = addTwenty();
+    printf("In main2 x = %d, y = %d, z = %d\n", x, y, z);
+    y = addThirty(z);
+    printf("In main3 x = %d, y = %d, z = %d\n", x, y, z);
+}
